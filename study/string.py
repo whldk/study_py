@@ -2,6 +2,7 @@
 
 '''
     python 中的 字符串的用法和常用函数 归纳
+    可以使用 ' 或 " 来创建字符串
 '''
 
 var1 = 'hello'
@@ -9,6 +10,8 @@ var2 = "Python"
 
 '''
     python 访问字符串 可以用方括号 [] 来截取字符串
+    变量[头下标:尾下标]
+    索引值以 0 为开始值  -1为从末尾开始的位置
 '''
 print(var1[0:2], var1[:2], var1[2], var1[2:], var1 +' '+ var2)
 
@@ -61,9 +64,14 @@ print(R'\n')
     Python 字符串格式化
     字符串格式化使用与 C 中 sprintf 函数一样的语法
     更多的查询官网
+    %s 、 %d、 %c、 %f、%o、 %u、 %e
 '''
 
 print("我叫 %s  今年 %d 岁" % ('小米', 11))
+
+'''
+    python string 字符串 常用函数
+'''
 print(var1.capitalize()) # 首字符大写
 print(var1.count('l', 1,  5))  #  统计字符串里某个字符出现的次数 count(str, start, end)
 
